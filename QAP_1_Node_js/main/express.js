@@ -5,17 +5,16 @@ const express = require("express");
 const app = express(),
   port = 3586;
 
-app// test the Nodemon Module
+// test the Nodemon Module
 // Enter "npm run dev" in the terminal to start app
 // Edit the response, save, and then refresh browser to receive updates
 // The server will automatically restart on save
-.app
-  .get("/", (req, res) => {
-    res.send(`<h1>API Running on the port ${port}</h1>
+app.get("/", (req, res) => {
+  res.send(`<h1>Running on the port ${port}</h1>
   <p>This is a paragraph</p>
   <p>This is a another paragraph</p>
   `);
-  });
+});
 
 app.listen(port, () => {
   console.log(`Server listening on the port: ${port}`);
