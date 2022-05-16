@@ -1,0 +1,2 @@
+Some text that will be added to the file by the fs.writeFile method
+More text to be added to the file using the fs.appendFile method
