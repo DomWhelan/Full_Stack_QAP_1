@@ -1,4 +1,5 @@
 // Include Express module in this application
+// Express is a web application framework
 const express = require("express");
 
 // Declare express to a variable that can be manipulated and call methods
@@ -11,7 +12,7 @@ const app = express(),
 // The server will automatically restart on save
 app.get("/", (req, res) => {
   res.send(`<h1>Running on the port ${port}</h1>
-  <p>This is a paragraph</p>
+  <p>This is a paragraph......</p>
   <p>This is a another paragraph</p>
   `);
 });
